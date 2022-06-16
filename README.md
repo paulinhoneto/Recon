@@ -159,7 +159,7 @@ echo testphp.vulnweb.com | waybackurls | gf xss | uro | qsreplace '"><img src=x 
 cat urls | bhedak "\"><svg/onload=alert(1)>*'/---+{{7*7}}"
 ```
 
-###  .bashrc shortcut OFJAAAH
+###  .bashrc shortcut
 
 ```bash
 reconjs(){
@@ -353,7 +353,7 @@ cat dominios | gau |grep -iE '\.js'|grep -iEv '(\.jsp|\.json)' >> gauJS.txt ; ca
 ```
 
 
-###  My recon automation simple. OFJAAAH.sh
+###  My recon automation simple.
 
 - [Explaining command]
 
@@ -366,7 +366,7 @@ chaos -d $1 -o chaos1 -silent ; assetfinder -subs-only $1 >> assetfinder1 ; subf
 - [Explaining command]
 
 ```bash
-curl https://chaos-data.projectdiscovery.io/index.json | jq -M '.[] | .URL | @sh' | xargs -I@ sh -c 'wget @ -q'; mkdir bounty ; unzip '*.zip' -d bounty/ ; rm -rf *zip ; cat bounty/*.txt >> allbounty ; sort -u allbounty >> domainsBOUNTY ; rm -rf allbounty bounty/ ; echo '@OFJAAAH'
+curl https://chaos-data.projectdiscovery.io/index.json | jq -M '.[] | .URL | @sh' | xargs -I@ sh -c 'wget @ -q'; mkdir bounty ; unzip '*.zip' -d bounty/ ; rm -rf *zip ; cat bounty/*.txt >> allbounty ; sort -u allbounty >> domainsBOUNTY ; rm -rf allbounty bounty/ 
 ```
 
 ###  Recon to search SSRF Test
