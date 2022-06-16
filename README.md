@@ -94,8 +94,8 @@ bbrf inscope add '*.af.mil' '*.osd.mil' '*.marines.mil' '*.pentagon.mil' '*.disa
 
 ### Scan subdomains OneLiner with ALIAS 
 - [Explained command]
+- target=osd
 
-target=osd
 alias OneLiner="mkdir $target; cd $target; echo '$target.mil' | assetfinder -subs-only | httprobe | anew hosts"
 
 ###  Scan All domains using Knoxss
